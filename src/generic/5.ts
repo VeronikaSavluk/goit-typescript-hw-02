@@ -4,8 +4,10 @@
 */
 
 interface KeyValuePair {
-  key;
-  value;
+  key: string;
+  value: number;
 }
+
+type Pair = keyof KeyValuePair;
 
 export {};
