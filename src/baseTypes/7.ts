@@ -4,18 +4,22 @@
 */
 
 enum Day {
-  MONDAY,
-  TUESDAY,
-  WEDNESDAY,
-  THURSDAY,
-  FRIDAY,
+Monday,
+Tuesday,
+Wednesday,
+Thursday,
+Friday,
+Saturday,
+Sunday,
 };
 
 function isWeekend(day: Day): boolean {
-  let workDay = day ? true : false;
-  return workDay;
+  if(day === Day.Saturday || day === Day.Sunday){
+    return false;
+  }
+  return true;
 };
 
-isWeekend(Day.WEDNESDAY);
+isWeekend(Day.Wednesday);
 
 export {};

@@ -16,7 +16,7 @@ class Component<T extends Title> {
 }
 
 class Page extends Component<PageInfo> {
-  pageInfo (): void {
+  pageInfo () {
     console.log(this.props.title);
   }
 }
