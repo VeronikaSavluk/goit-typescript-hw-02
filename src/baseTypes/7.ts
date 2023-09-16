@@ -14,10 +14,7 @@ Sunday,
 };
 
 function isWeekend(day: Day): boolean {
-  if(day === Day.Saturday || day === Day.Sunday){
-    return false;
-  }
-  return true;
+  return day === Day.Saturday || day === Day.Sunday;
 };
 
 isWeekend(Day.Wednesday);
